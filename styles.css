@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #5B797E;
+    --secondary-color: #7E5B79;
+    --third-color: #797E5B;
+    --heading-font-weight: 700;
+    --heading-font-family: 'Spectral, serif';
+}
+
+.navbar {
+    font-family: 'Abril Fatface', serif !important;
+    width: 100%;
+}
+
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+}
+
+.page-header__item {
+    flex: 0 1 200px;
+    min-width: 0;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(201, 240, 245, 0.5); /* Black background with opacity */
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: var(--heading-font-family);
+    font-size: 30px;
+    font-weight: var(--heading-font-weight);
+}
+
+h2 {
+    font-family: var(--heading-font-family);
+    font-size: 24px;
+    font-weight: var(--heading-font-weight);
+}
+
+h3 {
+    font-family: var(--heading-font-family);
+    font-size: 18px;
+    font-weight: var(--heading-font-weight);
+}
