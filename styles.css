@@ -2,14 +2,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --primary-color: #5B797E;
-    --secondary-color: #7E5B79;
-    --third-color: #797E5B;
-    --heading-font-weight: 700;
-    --heading-font-family: 'Spectral, serif';
-}
-
 .navbar {
     font-family: 'Abril Fatface', serif !important;
     width: 100%;
@@ -20,11 +12,6 @@
     width: 100%;
     padding: 20px;
     background-color: black;
-}
-
-.page-header__item {
-    flex: 0 1 200px;
-    min-width: 0;
 }
 
 #overlay {
