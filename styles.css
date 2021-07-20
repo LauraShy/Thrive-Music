@@ -14,6 +14,7 @@
     background-color: black;
 }
 
+/*This doesn't work*/
 #overlay {
     position: fixed; /* Sit on top of the page content */
     display: none; /* Hidden by default */
@@ -24,6 +25,47 @@
     right: 0;
     bottom: 0;
     background-color: rgb(201, 240, 245, 0.5); /* Black background with opacity */
+}
+
+/*This doesn't work*/
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+/*This doesn't work*/
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid #fff;
+}  
+
+/*This doesn't work*/
+.guitar-1 {
+    border-radius: 50%;
+}
+
+/*This doesn't work*/
+img.guitar-1 {
+    border-radius: 50%;
+}
+
+/*This doesn't work*/
+div.div-1 {
+    background-image: url("img/piano\ boy\ &\ girl\ bg.png");
+    opacity: 0.5;
+}
+/*This doesn't work*/
+div.div-2 {
+    background-image: url("img/guitar-2.png");
+    opacity: 0.5;
+}
+
+/*This doesn't work*/
+div.div-3 {
+    background-image: url("img/Microphone-purple.JPG");
+    opacity: 0.5;
 }
 
 body {
