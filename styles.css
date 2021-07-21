@@ -23,7 +23,7 @@ div.div-3 span {
     align-items: center;
     background-color: rgb(0, 0, 0);
     justify-content: space-between;
-    margin: 0;
+    margin: auto;
 }
 
 .navbar .nav-btn {
@@ -46,7 +46,6 @@ img.logo {
 .navbar a:hover {
     background-color: rgb(168, 234, 250);
     color: black;
-    height: auto;
 }
 
 .page-header {
@@ -138,11 +137,6 @@ img.dance-party {
 img.Lisa {
     border-radius: 50%;
     width: 25%;
-}
-
-.div-5-text {
-    align-content: center;
-    padding: 15px;
 }
 
 div.div-1 .background-1 {
