@@ -138,7 +138,10 @@ img.Lisa {
     border-radius: 50%;
     width: 25%;
 }
-
+.background-section {
+    position: relative;
+    overflow: hidden;
+}
 div.div-1 .background-1 {
     background-image: url("img/piano\ boy\ &\ girl\ bg.png");
     backface-visibility:hidden;
@@ -152,7 +155,10 @@ div.div-1 .background-1 {
       height: 100%;
       position: absolute;
       overflow: hidden;
-      opacity: 0.7;
+      opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: 0;
 }
 
 div.div-2 .background-2 {
@@ -187,4 +193,40 @@ div.div-3 .background-3 {
       opacity: 0.7;
 }
 
+.paragraph {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 100px; /* Not ideal for responsive design */
+}
 
+/* Background Image */
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.background img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Round Images  */
+.round-image {
+    width: 160px;
+    margin: auto;
+    border-radius: 100%;
+    overflow: hidden;
+    height: 160px;
+}
+.round-image img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
