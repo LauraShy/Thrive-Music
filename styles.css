@@ -108,7 +108,7 @@ img.dance-party {
 div.div-1 .background-1 {
     background-image: url("img/piano\ boy\ &\ girl\ bg.png");
     backface-visibility:hidden;
-    margin: auto;
+    margin: 0;
     -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -124,7 +124,7 @@ div.div-1 .background-1 {
 div.div-2 .background-2 {
     background-image: url("img/guitar-2.png");
     backface-visibility:hidden;
-    margin: auto;
+    margin: 0;
     -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -140,7 +140,7 @@ div.div-2 .background-2 {
 div.div-3 .background-3 {
     background-image: url("img/Microphone-purple.JPG");
     backface-visibility:hidden;
-    margin:auto;
+    margin: 0;
     -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
