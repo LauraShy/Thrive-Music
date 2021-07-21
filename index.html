@@ -3,25 +3,28 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Thrive Music</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Landing Page</title>
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
 	 crossorigin="anonymous">
-	<link href="style.css" rel="stylesheet" type="text/css" />
+   <link href="styles.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
-  <div><img src="img/FlameNote-HiRes-removebg-preview.png" alt="logo" class="page-header__item" height="100%"></div>
   <!--What to put on nav if it's not ready besides landing page, link to parts on the page?-->
-  <nav class="main-navigation page-header__item">
-    <ul role="menubar" class="navigation-list">
-      <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-  </nav>
+  <div class="navbar">
+    <div class="navigation">
+      <a href="#"><img src="img/FlameNote-HiRes-removebg-preview_adobespark.png" class="logo" alt="logo"></a>
+      <a href="#">About</a>
+      <a href="#">Resume</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
   <!--Section 1: Main Landing - How to have bg images change and also h3 quotes, or at least quote-->
   <div class="div-1">
-      <img src="img/piano boy & girl bg.png" class="piano-kids" width="100%">
+    <div class="background-1"></div>
       <!--Having trouble creating overlay text boxes w/low opacity over background images-->
       <div id="overlay">
         <div id="text">
@@ -32,10 +35,9 @@
         </div>
       </div>
   </div>
-  <br></br>
   <!--Section 2: Dream, Transform, Inspire-->
   <div class="div-2">
-    <img src="img/guitar-2.png" class="guitar-2" width="100%">
+    <div class="background-2"></div>
     <!--Having trouble creating overlay text boxes w/low opacity over background images-->
     <div id="overlay">
       <div id="text">
@@ -47,39 +49,29 @@
   </div>
   <!--Section 3: Here's We Do It-->
   <div class="div-3">
-    <img src="img/Microphone-purple.JPG" class="Microphone-purple" width="100%">
+    <div class="background-3"></div>
     <!--Having trouble creating overlay text boxes w/low opacity over background images-->
-    <div id="overlay">
-      <div id="text">
-        <h1>Here's How We Do It</h1>
-        <div class="float-container">
-
-          <div class="float-child">
-            <div class="box-1">
-              <img src="img/guitar-1.png" class="guitar-1" width=30%>
-              <h5>Choose Your Favorite Instrument</h5>
-              <p>Unsure? Try out our <i>Intro to Music</i> class!</p>
-            </div>
-          </div>
-          
-          <div class="float-child">
-            <div class="box-2">
-              <img src="img/little-kid-lesson.png" class="little-kid-lesson" width=30%>
-              <h5>Sign up for Weekly Group or Private Lessons</h5>
-              <button class="free-trial">Book a Free Trial!</button>
-            </div>
-          </div>
-
-          <div class="float-child">
-            <div class="box-3">
-              <img src="img/dance-party.JPG" class="dance-party" width=30%>
-              <h5>Learn, perform, gain friendships, make memories, and acquire invaluable skills that can help you achieve your dreams</h5>
-            </div>
-          </div>
-          
+    <section>
+      <h1>Here's How We Do It</h1>
+      <div class="grid">
+        <div class="grid__item">
+          <img src="img/guitar-1.png" class="guitar-1">
+          <h4>Choose Your Favorite Instrument</h4>
+          <p>
+            Unsure? Try out our <i>Intro to Music</i> class!
+          </p>
+        </div>
+        <div class="grid__item">
+          <img src="img/little-kid-lesson.png" class="little-kid-lesson">
+          <h4>Sign up for Weekly Group or Private Lessons</h4>
+          <button class="free-trial">Book a Free Trial!</button>
+        </div>
+        <div class="grid__item">
+          <img src="img/dance-party.JPG" class="dance-party">
+          <h4>Learn, perform, gain friendships, make memories, and acquire invaluable skills that can help you achieve your dreams</h4>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </body>
 
