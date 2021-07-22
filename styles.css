@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* General styling */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Kaushan Script', cursive;
 }
@@ -12,10 +13,6 @@ body, p, a, button {
 
 body {
     margin: 0px;
-}
-
-div.div-3 span {
-    align-content: center;
 }
 
 .navbar {
@@ -55,18 +52,20 @@ img.logo {
     background-color: black;
 }
 
-#overlay {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(201, 240, 245, 0.5); 
+.background-section {
+    position: relative;
+    overflow: hidden;
 }
 
+.paragraph {
+    position: relative;
+    z-index: 2;
+    color: black;
+    text-align: center;
+    padding: 100px; /* Not ideal for responsive design */
+}
+
+/* CSS Grid */
 
 .grid__item {
     display: inline-block;
@@ -79,14 +78,9 @@ img.logo {
     display: inline-block;
     width: 25%;
     text-align: center;
-    padding: 15px;
     align-content: center;
 }
 
-img.how-we-do-it {
-    border-radius: 50%;
-}
-  
 @supports (display: grid) {
     .grid {
       display: grid;
@@ -119,6 +113,7 @@ img.how-we-do-it {
     }
 } 
 
+/* General Images */
 img.guitar-1 {
     border-radius: 50%;
     width: 33%
@@ -137,54 +132,44 @@ img.dance-party {
 img.Lisa {
     border-radius: 50%;
     width: 25%;
+    z-index: 2;
+    opacity: 10;
 }
 
-div.div-1 .background-1 {
-    background-image: url("img/piano\ boy\ &\ girl\ bg.png");
-    backface-visibility:hidden;
-    margin: 0;
-    -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      background-position: center;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      overflow: hidden;
-      opacity: 0.7;
+.grid-2 .grid__item img {
+    padding-top: 10px;
 }
 
-div.div-2 .background-2 {
-    background-image: url("img/guitar-2.png");
-    backface-visibility:hidden;
-    margin: 0;
-    -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      background-position: center;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      overflow: hidden;
-      opacity: 0.7;
+/* Background Image */
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.background img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 0;
 }
 
-div.div-3 .background-3 {
-    background-image: url("img/Microphone-purple.JPG");
-    backface-visibility:hidden;
-    margin: 0;
-    -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      background-position: center;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      overflow: hidden;
-      opacity: 0.7;
+/* Round Images  */
+.round-image {
+    width: 180px;
+    margin: auto;
+    border-radius: 100%;
+    overflow: hidden;
+    height: 180px;
+    padding-top: 10px;
 }
-
+.round-image img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
 
