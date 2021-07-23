@@ -34,6 +34,7 @@ body {
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 .navbar a:hover {
@@ -66,6 +67,19 @@ div.icon-attribute {
     text-align: center;
     align-content: center;
     padding: 0px;
+}
+
+.landing-main div.paragraph {
+    text-align: center;
+    align-content: center;
+    z-index: 2;
+    background-color: rgb(205, 176, 238, 0.7);
+    width: fit-content;
+}
+
+div.main-text.paragraph {
+    position: relative;
+    align-content: center;
 }
 
 /* CSS Grid */
@@ -139,6 +153,15 @@ div.icon-attribute {
 }  
 
 /* General Images */
+img.logo {
+    height: 50px;
+}
+
+img.logo-main {
+    position: relative;
+    align-content: left;
+}
+
 img.guitar-1 {
     border-radius: 50%;
     width: 33%
