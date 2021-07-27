@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+/* NAVIGATION CSS */
+.header-grid {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-areas: 'header1 header2 header3';
+    vertical-align: center;
+    align-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.header-grid a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.header-grid a:hover {
+    background-color: rgb(168, 234, 250);
+    color: black;
+}
+
+img.logo {
+    height: 60%;
+}
+
+.nav-btn {
+    background-color: rgb(168, 69, 190);
+    text-decoration: rgb(0, 0, 0);
+    color: white;
+    padding: 5px;
+}
+
+.nav-btn:hover {
+    background-color: rgb(168, 234, 250);
+    color: black;
+}
+
+/* MAIN SECTION CSS */
+.main-grid-container {
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 3fr 1fr;
+    grid-template-areas: 
+    'header section1-grid section2-grid section3-grid section4-grid section5-grid section6-grid footer';
+}
+
+@supports (display: grid) {
+    .main-grid-container {
+        display: grid;
+        grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 3fr 1fr;
+        grid-gap: 0px;
+        margin: 0;
+    }
+    .section-grid {
+        display: grid;
+        grid-template-columns: 1fr 10fr 1fr;
+        grid-template-areas: 'R_space section-content L_space';
+        grid-gap: 0px;
+        margin: 0;
+    }
+}
+
+/* General Styling */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+body, p, a, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+/* Background Image */
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.background img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+/* SECTION 1 CSS */
+.section1 {
+    align-content: center;
+}
+
+/* SECTION 2 CSS */
+.section2 {
+    align-content: center;
+}
+
+/* SECTION 3 CSS */
+img.guitar-1 {
+    border-radius: 50%;
+    width: 33%
+}
+
+img.little-kid-lesson {
+    border-radius: 50%;
+    width: 33%;
+}
+
+img.dance-party {
+    border-radius: 50%;
+    width: 33%;
+}
+
+.how-we-do-grid .grid__item {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    align-content: center;
+}
+
+@supports (display: grid) {
+    .how-we-do-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        margin: 0;
+    }
+    .how-we-do-grid .grid__item {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+} 
+
+/* Round Images  */
+.round-image {
+    width: 180px;
+    margin: auto;
+    border-radius: 100%;
+    overflow: hidden;
+    height: 180px;
+    padding-top: 10px;
+}
+.round-image img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* SECTION 4 CSS */
+.section4-choice-grid .grid__item {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    align-content: center;
+}
+
+@supports (display: grid) {
+    .section4-choice-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 0;
+  
+    }
+    .section4-choice-grid .grid__item {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+} 
+
+/* SECTION 5 CSS */
+img.Lisa {
+    border-radius: 50%;
+    width: 25%;
+    z-index: 2;
+    opacity: 10;
+}
+
+.blog-grid .blog-content {
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+}
+
+@supports (display: grid) {
+    .blog-grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 5px;
+        margin: 0;
+    }
+    .blog-grid .blog-content {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+} 
+
+/* SECTION 6 CSS */
+.testimonial-grid .grid__item {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    align-content: center;
+}
+
+@supports (display: grid) {
+    .testimonial-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        margin: 0;
+    }
+    .testimonial-grid .grid__item {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+} 
+
+/* FOOTER CSS */
+.footer-grid .footer {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    align-content: center;
+}
+
+@supports (display: grid) {
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px;
+      margin: 0;
+  
+    }
+    .footer-grid .footer {
+      width: auto;
+      min-height: auto;
+      margin: 0;
+    }
+}  
