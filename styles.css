@@ -117,7 +117,16 @@ img.logo {
     align-items: center;
     text-align: center;
     z-index: 1;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 1000px) {
+    .section1 {
+      display: flex;
+      flex-direction: column;
+      grid-template-rows: 1fr 1fr;
+    }
 }
 
 .section1-text {
@@ -151,6 +160,15 @@ img.logo {
     grid-template-columns: 1fr 1fr;
     padding-bottom: 20px;
     padding-top: 15px;
+}
+
+
+@media (max-width: 930px) {
+    .section2 {
+      display: flex;
+      flex-direction: column;
+      grid-template-rows: 1fr 1fr;
+    }
 }
 
 img.Boy-Girl-piano {
@@ -187,6 +205,15 @@ img.dance-party {
     grid-gap: 60px;
     margin: 0;
     justify-items: center;
+}
+
+@media (max-width: 700px) {
+    .how-we-do-grid {
+      display: flex;
+      flex-direction: column;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 30px;
+    }
 }
 
 .how-we-do-grid .grid__item {
@@ -235,6 +262,13 @@ img.dance-party {
     margin: 0;
 }
 
+@media (max-width: 700px) {
+    .section4-choice-grid {
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
 .section4-choice-grid .grid__item {
     display: inline-block;
     text-align: center;
@@ -265,7 +299,7 @@ img.dance-party {
 
 img.Lisa {
     border-radius: 50%;
-    width: 50%;
+    width: 60%;
     z-index: 2;
 }
 
@@ -280,6 +314,19 @@ img.Lisa {
     text-align: center;
 }
 
+@media (max-width: 930px) {
+    .blog-grid {
+      flex-direction: column;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+      padding-top: 0px;
+    }
+
+    div.blog-content {
+        margin-top: 0px;
+    } /* this part not working */
+}
+
 .blog-content h1 {
     margin-bottom: 0px;
 }
@@ -292,13 +339,17 @@ img.Lisa {
     width: auto;
     min-height: auto;
     margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* SECTION 6 CSS */
 .section6 {
     align-content: center;
+    text-align: center;
     z-index: 1;
     color: white;
+    padding-bottom: 10px;
 }
 
 .testimonial-grid {
@@ -306,33 +357,75 @@ img.Lisa {
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     grid-gap: 10px;
+    justify-content: space-evenly;
+    padding-bottom: 10px;;
 }
+
+@media (max-width: 700px) {
+    .testimonial-grid {
+      display: flex;
+      flex-direction: column;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
 .testimonial-grid .grid__item {
     display: inline-block;
     text-align: center;
     align-content: center;
     min-height: auto;
     margin: auto;
+    height: 100%;
+    width: auto;
+    background-color: rgb(58 9 85 / 72%);
 }
 
 /* FOOTER CSS */
-.footer {
+footer.section-grid {
+    background-color: black;
+    color: white;
     align-content: center;
     z-index: 1;
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 5px;
-    margin: 0;
-    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: auto;
     position: relative;
+    grid-gap: 10px;
 }
-.footer-grid .footer {
+
+@media (max-width: 930px) {
+    .footer-grid {
+      display: flex;
+      flex-direction: column;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+.footer .grid__item {
     display: inline-block;
-    width: 50%;
     min-height: auto;
     margin: 0;
     align-items: center;
+    padding-bottom: 10px;
+} 
+
+h1.connect {
+    margin-bottom: 0px;
+}
+
+img.Laura-logo {
+    height: 150px;
+    padding-bottom: 20px;
+}
+
+.icon-attribute {
+    font-size: small;
+}
+
+.map {
+    width: 90%;
+    height: auto;
 }

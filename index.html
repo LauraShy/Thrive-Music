@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Overlock:ital@1&display=swap" rel="stylesheet">
-  <link href="style2.css" rel="stylesheet" type="text/css"/>
+  <link href="styles.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
             </div>
             <div class="header2">
                 <a href="#about">ABOUT</a>
-                <a href="#">CONNECT</a>
+                <a href="#connect">CONNECT</a>
                 <a href="#">PARENT PORTAL</a>
             </div>
             <div class="header3">
@@ -38,7 +38,7 @@
         <div class="section-grid">
             <div class="L-space"></div>
             <div class="section-content section1">
-                <div>
+                <div class='section1-img'>
                     <img src="img/Music Academy.png" class="canva-logo">
                 </div>
                 <div class="section1-text">
@@ -110,9 +110,8 @@
                 <h2>Choose Your Journey</h2>
                 <div class="section4-choice-grid">
                     <div class="grid__item">
-                        <img src="img/007-keyboard.png">
-                        <h3>Intro to
-                            Rock Band</h3>
+                        <img src="img/amplifier.png">
+                        <h3>Intro to Rock Band</h3>
                     </div>
                     <div class="grid__item">
                         <img src="img/007-keyboard.png">
@@ -173,19 +172,18 @@
             <div class="section-content section6">
                 <div class="paragraph">
                     <h1>Testimonials</h1>
-                    <button class="trial-btn">Book a Free Trial</button>
                 </div>
                 <div class="testimonial-grid">
                     <div class="grid__item">
-                    <h3>Student/Parent Name, age of kid</h3>
+                    <h3>Harrison H., former student</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor morbi non arcu risus. Tristique sollicitudin nibh sit amet.
+                        “Lisa Harper is an amazing woman and phenomenal educator.  She motivated me year after year to find my passion for music even after I left her class 4 years ago.  I’m a senior in high school now and Lisa is still someone who I could call a friend, mentor, and inspiration.”
                     </p>
                     </div>
                     <div class="grid__item">
-                    <h3>Student/Parent Name, age of kid</h3>
+                    <h3>Pamela L., former parent</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor morbi non arcu risus. Tristique sollicitudin nibh sit amet.
+                        “You have to check out Thrive Music Academy!  Lisa Harper is a fabulous music teacher.  My child learned so much from her and she always makes the education FUN!  As my daughter said: ‘everyone loves Mrs. Harper!'”
                     </p>
                     </div>
                     <div class="grid__item">
@@ -195,6 +193,7 @@
                     </p>
                     </div>
                 </div>
+                <button class="trial-btn">Book a Free Trial</button>
             </div>
             <div class="R-space"></div>
             <div class="background">
@@ -202,30 +201,37 @@
             </div>
         </div>
         <!--Footer-->
-        <footer class="footer-grid">
-            <div class="footer">
-                <h3>Follow Us</h3>
-                <p>
-                    <a href="https://www.facebook.com/ThriveMusicAcademy" target="_blank" rel="noopener noreferrer">
-                    <img src="img/009-facebook.png" class="Icons" height= "50px" alt="fb-icon"></a>
-                    <a href="https://www.instagram.com/thrivemusicacademy/" target="_blank" rel="noopener noreferrer">
-                    <img src="img/010-instagram.png" class="Icons" height= "50px" alt="insta-icon"></a>
-                </p>
+        <footer class="section-grid">
+            <div class="L-space"></div>
+            <div class="section-content footer " id="connect">
+                <h1 class="connect">Connect</h1>
+                <div class="footer-grid">
+                    <div class="footer grid__item">
+                        <h3>Contact & Follow Us</h3>
+                        <p>
+                            <a href="https://www.facebook.com/ThriveMusicAcademy" target="_blank" rel="noopener noreferrer">
+                            <img src="img/009-facebook.png" class="Icons" height= "50px" alt="fb-icon"></a>
+                            <a href="https://www.instagram.com/thrivemusicacademy/" target="_blank" rel="noopener noreferrer">
+                            <img src="img/010-instagram.png" class="Icons" height= "50px" alt="insta-icon"></a>
+                            <a href="tel: 8045221711" target="_blank" rel="noopener noreferrer">
+                            <img src="img/phone.png" class="Icons" height= "50px" alt="phone-icon"></a>
+                            <a href= "mailto: info@thrive-music.com" target="_blank" rel="noopener noreferrer">
+                            <img src="img/011-email.png" class="Icons" height= "50px" alt="email-icon"></a>
+                        </p>
+                    </div>
+                    <div class="footer grid__item">
+                        <h3>Location: 9102 Rutland Greens Way, Suite E</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.7692675730577!2d-77.40546254912542!3d37.654628226736776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b13d698e8e5d97%3A0x4c6b675ebcdd8b06!2s9102%20Rutland%20Greens%20Way%20e%2C%20Mechanicsville%2C%20VA%2023116!5e0!3m2!1sen!2sus!4v1627652976770!5m2!1sen!2sus" style="border:0;" class="map" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="footer grid__item">
+                        <h3>Attributes</h3>
+                        <img src="img/Logo Thing- bl & ppl.png" alt="Laura-logo" class="Laura-logo">
+                        <br>
+                        <div class="icon-attribute">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                    </div>
+                </div>
             </div>
-            <div class="footer">
-                <h3>Find Us</h3>
-                <p>
-                    <a href="tel:8041234567" target="_blank" rel="noopener noreferrer">
-                    <img src="img/phone.png" class="Icons" height= "50px" alt="phone-icon">(804) 123-4567
-                    </a>
-                    <a href="mailto:info@thrive-music.com" target="_blank" rel="noopener noreferrer">
-                    <img src="img/011-email.png" class="Icons" height= "50px" alt="email-icon">info@thrive-music.com
-                    </a>
-                    <a href="https://goo.gl/maps/YA7fh5bZfuGoUi3P8" target="_blank" rel="noopener noreferrer">
-                    <img src="img/013-map.png" class="Icons" height= "50px" alt="map-icon">9102 Rutland Greens Way, Suite E
-                </p>
-            </div>
-            <div class="icon-attribute paragraph">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div class="R-space"></div>
         </footer>
     </div>
 </body>
