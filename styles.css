@@ -126,7 +126,7 @@ img.logo {
       display: flex;
       flex-direction: column;
       grid-template-rows: 1fr 1fr;
-      width: 100%;
+      width: 100%;/* tried adding this to help with the need to zoom-out slightly on cell phones */
     }
 }
 
