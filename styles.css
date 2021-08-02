@@ -322,6 +322,11 @@ img.Lisa {
         grid-template-columns: 1fr;
         padding-top: 0px;
     }
+
+    .blog-content.blog2 {
+        margin-top: 0px;
+        margin-bottom: 0px; /* tried fixing weird spacing issues with small screen. Huge margin I can't remove */
+    }
 }
 
 .blog-content h1 {
