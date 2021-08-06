@@ -151,9 +151,10 @@ img.logo {
 } */
 
 .section1-text {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     width: fit-content;
+    box-shadow: 10px 10px 5px rgba(24, 25, 26, 0.452);
 }
 
 .section1-btn {
@@ -169,9 +170,37 @@ img.logo {
     color: white;
 }
 
-.black-op {
-    background-color: rgb(0, 0, 0);
+/* @keyframes FadeInOut {
+    0% {
+        opacity:1;
+    }
+    45% {
+        opacity:1;
+    }
+    55% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
 }
+  
+#background img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+  
+#background img.top {
+    animation-name: FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 7.5s;
+    animation-direction: alternate;
+} */
 
 /* SECTION 2 CSS */
 .section2 {
