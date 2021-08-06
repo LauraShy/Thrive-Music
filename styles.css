@@ -154,7 +154,7 @@ img.logo {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     width: fit-content;
-    box-shadow: 10px 10px 5px rgba(24, 25, 26, 0.452);
+    box-shadow: 5px 5px 5px rgba(24, 25, 26, 0.452);
 }
 
 .section1-btn {
@@ -170,7 +170,7 @@ img.logo {
     color: white;
 }
 
-/* @keyframes FadeInOut {
+@keyframes FadeInOut {
     0% {
         opacity:1;
     }
@@ -200,7 +200,7 @@ img.logo {
     animation-iteration-count: infinite;
     animation-duration: 7.5s;
     animation-direction: alternate;
-} */
+}
 
 /* SECTION 2 CSS */
 .section2 {
@@ -478,6 +478,7 @@ img.Lisa {
     height: 100%;
     width: auto;
     background-color: rgb(58 9 85 / 75%);
+    box-shadow: 10px 10px 5px rgba(24, 25, 26, 0.452);
 }
 
 /* FOOTER CSS */
