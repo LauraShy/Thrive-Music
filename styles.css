@@ -303,6 +303,7 @@ img.dance-party {
 .section4 {
     align-content: center;
     z-index: 1;
+    padding-top: 20px;
 }
 
 .section4-choice-grid {
