@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+/* Button element polishing */
+button {
+    border: none;
+    padding: 12px 24px !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 /* MAIN SECTION CSS */
 .main-grid-container {
     display: grid;
@@ -13,10 +23,11 @@
 .section-grid {
     display: grid;
     position: relative;
-    grid-template-rows: 1fr;
+    grid-template-rows: minmax(480px,1fr);
     grid-template-columns: 1fr 10fr 1fr;
     width: 100%;
     overflow: hidden;
+    align-items: center;
 }
 
 .section-content {
@@ -72,12 +83,20 @@ body {
     padding-right: 5px;
 }
 
+@media (max-width:720px) {
+
+    .header-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+}
+
 .header-grid a {
     color: white;
-    padding: 14px 20px;
+    padding: 16px;
     text-decoration: none;
     text-align: center;
-    padding-bottom: 5px;
     font-family: 'Overlock', cursive;
 }
 
@@ -89,8 +108,7 @@ body {
 .header3 {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr minmax(100px, 2fr);
-    column-gap: 10px;
+    grid-template-columns: 1fr 1fr minmax(200px,1fr);
     align-items: center;
 }
 
@@ -132,6 +150,12 @@ img.logo {
       grid-template-rows: 1fr 1fr;
       width: 100%;/* tried adding this to help with the need to zoom-out slightly on cell phones */
     }
+}
+
+img.canva-logo {
+    width: 100%;
+    display: block;
+    padding: 20px;
 }
 
 /* img.canva-logo {
@@ -210,6 +234,7 @@ img.logo {
     grid-template-columns: 1fr 1fr;
     padding-bottom: 20px;
     padding-top: 15px;
+    column-gap: 20px;
 }
 
 
@@ -223,13 +248,13 @@ img.logo {
 }
 
 img.Boy-Girl-piano {
-    border-radius: 30%;
-    height: 300px;
+    height: auto;
     margin: auto;
     justify-content: center;
     align-items: center;
-    display: flex;
-    padding-top: 10px;
+    display: block;
+    padding: 10px 0;
+    width: 100%;
 }
 
 /* SECTION 3 CSS */
@@ -354,6 +379,12 @@ img.dance-party {
     font-weight: bold;
     font-family: 'Overlock', cursive;
     border-radius: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .journey-btn:hover {
@@ -479,7 +510,18 @@ img.Lisa {
     height: 100%;
     width: auto;
     background-color: rgb(58 9 85 / 75%);
-    box-shadow: 10px 10px 5px rgba(24, 25, 26, 0.452);
+}
+.testimonial-grid .grid__item {
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    min-height: auto;
+    margin: auto;
+    height: 100%;
+    width: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding: 12px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
 }
 
 /* FOOTER CSS */
@@ -488,6 +530,7 @@ footer.section-grid {
     color: white;
     align-content: center;
     z-index: 1;
+    grid-template-rows: minmax(360px,1fr);
 }
 
 .footer-grid {
