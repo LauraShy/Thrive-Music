@@ -5,7 +5,7 @@
 /* Button element polishing */
 button {
     border: none;
-    padding: 12px 24px !important;
+    padding: 12px 10px !important;
     font-family: 'Open Sans', sans-serif !important;
     font-size: 14px !important;
     font-weight: bold;
@@ -53,6 +53,14 @@ body, p, a, button {
 
 body {
     margin: 0px;
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+    }
+    
+.grow:hover { 
+    transform: scale(1.1); 
 }
 
 /* Background Image */
@@ -123,6 +131,7 @@ img.logo {
     text-decoration: rgb(0, 0, 0);
     color: white;
     padding: 5px;
+    margin: 5px;
     font-family: 'Overlock', cursive;
     font-size: medium;
 }
@@ -187,6 +196,7 @@ img.canva-logo {
     padding: 5px;
     font-family: 'Overlock', cursive;
     font-size: medium;
+    margin: 5px;
 }
 
 .section1-btn:hover {
@@ -302,7 +312,7 @@ img.dance-party {
     margin: 0;
 } 
 
-.black-bg {
+.prpl-bg {
     background-color: rgb(75, 14, 94);
     color: white;
     text-align: center;
@@ -330,6 +340,13 @@ img.dance-party {
     align-content: center;
     z-index: 1;
     padding-top: 20px;
+}
+
+.black-bg {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .section4-choice-grid {
@@ -459,7 +476,7 @@ img.Lisa {
 
 .blog-grid .blog-content {
     display: inline-block;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     align-items: center;
     width: auto;
