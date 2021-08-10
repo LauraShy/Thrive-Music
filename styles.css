@@ -100,6 +100,47 @@ body {
 
 }
 
+.subnav {
+    position: relative;
+    display: inline-block;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    width: 150%;
+    height: fit-content;
+    z-index: 2;
+}
+
+.subnav-content a {
+    background-color: black;
+    font-size: 14px;
+    color: white;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    z-index: 2;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+    height: fit-content;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
 .header-grid a {
     color: white;
     padding: 16px;
@@ -362,6 +403,7 @@ img.dance-party {
     .section4-choice-grid {
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+      row-gap: 25px;
       width: 100%;
     }
 }
@@ -432,6 +474,7 @@ img.dance-party {
       grid-template-rows: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       width: 100%;
+      row-gap: 10px;
     }
 }
 
