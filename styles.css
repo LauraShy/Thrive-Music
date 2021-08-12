@@ -645,3 +645,30 @@ img.Laura-logo {
     width: 90%;
     height: auto;
 }
+
+.footer img.Icons {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#content-desktop {
+    display: inline-block;
+    color: white;
+    vertical-align: center;
+}
+
+@media (max-width: 930px) {
+    #content-desktop {display: none;}
+}
+
+.footer.grid__item .footer-contact .footer1 {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 930px) {
+    .footer.grid__item .footer-contact {
+        display: inline-flex;
+        vertical-align: middle;
+    }
+}
