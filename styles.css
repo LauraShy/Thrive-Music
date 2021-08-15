@@ -6,9 +6,8 @@
 button {
     border: none;
     padding: 12px 10px !important;
-    font-family: 'Open Sans', sans-serif !important;
-    font-size: 14px !important;
-    font-weight: bold;
+    font-family: 'Arbei-Berry' ,'Open Sans', sans-serif !important;
+    font-size: 16px !important;
     cursor: pointer;
 }
 
@@ -39,12 +38,33 @@ button {
 }
 
 /* General Styling */
-h1 {
-    font-family: 'Oleo Script', cursive;
+@font-face {
+    font-family: Arbei-Berry;
+    src: url(fonts/ArbeiBerry-YzXrO.otf);
 }
 
-h2, h3, h4, h5, h6 {
-    font-family: 'Overlock', cursive;
+@font-face {
+    font-family: HeyOctober;
+    src: url(fonts/HeyOctober.otf);
+}
+
+@font-face {
+    font-family: RichieBrusher;
+    src: url(fonts/RichieBrusher-l2yy.ttf);
+}
+
+h1 {
+    font-family: 'RichieBrusher', 'HeyOctober', 'Oleo-Script';
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Arbei-Berry', 'Overlock', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Arbei-Berry', 'Overlock', Arial, Helvetica, sans-serif;
 }
 
 body, p, a, button {
@@ -146,7 +166,7 @@ body {
     padding: 16px;
     text-decoration: none;
     text-align: center;
-    font-family: 'Overlock', cursive;
+    font-family: 'Arbei-Berry', 'Overlock';
 }
 
 .header-grid .header2 a:hover {
@@ -173,7 +193,7 @@ img.logo {
     color: white;
     padding: 5px;
     margin: 5px;
-    font-family: 'Overlock', cursive;
+    font-family: 'Arbei-Berry', 'Overlock';
     font-size: medium;
 }
 
@@ -437,7 +457,7 @@ img.dance-party {
     height: 130px;
     font-size: large;
     font-weight: bold;
-    font-family: 'Overlock', cursive;
+    font-family: 'Arbei-Berry', 'Overlock', Arial, Helvetica, sans-serif;
     border-radius: 50%;
     display: grid;
     grid-template-columns: 1fr;
@@ -605,7 +625,7 @@ footer.section-grid {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     position: relative;
     grid-gap: 10px;
@@ -666,9 +686,17 @@ img.Laura-logo {
     margin-bottom: 5px;
 }
 
+.footer2 {
+    display: block;
+}
+
 @media (max-width: 930px) {
     .footer.grid__item .footer-contact {
         display: inline-flex;
         vertical-align: middle;
+    }
+
+    .footer2 {
+        display: inline-block;
     }
 }
