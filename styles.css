@@ -236,6 +236,7 @@ img.logo {
 
 img.canva-logo {
   width: 100%;
+  max-width: 725px;
   display: block;
   padding: 20px;
 }
